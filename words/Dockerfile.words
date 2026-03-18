@@ -16,7 +16,7 @@ RUN cd /src && \
 
 
 ENV CGO_ENABLED=0
-RUN cd /src && go build -o /words words/server.go words/config.go
+RUN cd /src && go build -o /words words/main.go
 
 FROM alpine:3.20
 
